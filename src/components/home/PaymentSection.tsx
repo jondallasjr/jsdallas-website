@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { DollarSign, Mail, MapPin } from "lucide-react";
+import { Lock, DollarSign, Mail } from "lucide-react";
 
 const PaymentSection = () => {
   return (
@@ -20,11 +20,11 @@ const PaymentSection = () => {
                 <div className="space-y-4">
                   {/* Secure Online Payment */}
                   <div className="flex items-center space-x-2 text-gray-700">
-                    <DollarSign className="h-5 w-5 text-blue-600" />
+                    <Lock className="h-5 w-5 text-blue-600" />
                     <span>
                       Secure online payment through our{" "}
                       <a
-                        href="https://square.link/u/ZqySgynk"
+                        href="https://checkout.square.site/merchant/7GXA474BJ29XX/checkout/FOKUT5A42GOXWTI4JYONIVU2"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:underline"
@@ -36,7 +36,7 @@ const PaymentSection = () => {
 
                   {/* Zelle Payments */}
                   <div className="flex items-center space-x-2 text-gray-700">
-                    <Mail className="h-5 w-5 text-blue-600" />
+                    <DollarSign className="h-5 w-5 text-blue-600" />
                     <span>
                       Zelle payments accepted at:{" "}
                       <a
@@ -52,7 +52,7 @@ const PaymentSection = () => {
 
                   {/* Mail Checks */}
                   <div className="flex items-center space-x-2 text-gray-700">
-                    <MapPin className="h-5 w-5 text-blue-600" />
+                    <Mail className="h-5 w-5 text-blue-600" />
                     <span>Mail checks to: P.O. Box 26, Baldwin, MD 21013</span>
                   </div>
 
@@ -66,7 +66,7 @@ const PaymentSection = () => {
                   <div className="pt-4">
                     <Button className="w-full" size="lg">
                       <a
-                        href="https://square.link/u/ZqySgynk"
+                        href="https://checkout.square.site/merchant/7GXA474BJ29XX/checkout/FOKUT5A42GOXWTI4JYONIVU2"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center w-full"
