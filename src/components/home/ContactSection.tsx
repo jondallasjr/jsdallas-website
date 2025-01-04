@@ -1,8 +1,33 @@
+'use client';
+
+import { useState } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const ContactSection = () => {
+  const [formState, setFormState] = useState({
+    name: '',
+    company: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log('Form submitted:', formState);
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormState(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
   return (
     <section id="contact" className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,13 +79,16 @@ const ContactSection = () => {
           {/* Contact Form */}
           <Card>
             <CardContent className="pt-6">
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="space-y-2">
                   <label className="block text-sm font-medium text-gray-700">
                     Name*
                   </label>
                   <input
                     type="text"
+                    name="name"
+                    value={formState.name}
+                    onChange={handleChange}
                     className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     required
                   />
@@ -72,6 +100,9 @@ const ContactSection = () => {
                   </label>
                   <input
                     type="text"
+                    name="company"
+                    value={formState.company}
+                    onChange={handleChange}
                     className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   />
                 </div>
@@ -82,6 +113,9 @@ const ContactSection = () => {
                   </label>
                   <input
                     type="email"
+                    name="email"
+                    value={formState.email}
+                    onChange={handleChange}
                     className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     required
                   />
@@ -93,6 +127,9 @@ const ContactSection = () => {
                   </label>
                   <input
                     type="tel"
+                    name="phone"
+                    value={formState.phone}
+                    onChange={handleChange}
                     className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     required
                   />
@@ -103,6 +140,9 @@ const ContactSection = () => {
                     Message
                   </label>
                   <textarea
+                    name="message"
+                    value={formState.message}
+                    onChange={handleChange}
                     rows={4}
                     className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   />
