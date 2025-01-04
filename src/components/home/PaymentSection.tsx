@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { DollarSign, Mail, MapPin } from "lucide-react";
+import Image from 'next/image';
 
 const PaymentSection = () => {
   return (
@@ -52,6 +53,17 @@ const PaymentSection = () => {
               </div>
             </CardContent>
           </Card>
+        </div>
+
+        {/* Add the plans.jpg image */}
+        <div className="mt-10">
+          <Image
+            src="/images/plans.jpg"
+            alt="Payment Plans"
+            width={1200}
+            height={800}
+            className="rounded-lg shadow-lg"
+          />
         </div>
       </div>
     </section>

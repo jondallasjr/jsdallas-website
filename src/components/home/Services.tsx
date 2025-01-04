@@ -1,5 +1,7 @@
+// src/components/home/Services.tsx
 import React from 'react';
 import { ServiceCard } from '@/components/shared/ServiceCard';
+import Image from 'next/image';
 
 interface Service {
   title: string;
@@ -62,6 +64,17 @@ export const Services: React.FC = () => {
               />
             ))}
           </div>
+        </div>
+
+        {/* Add an image to the Services section */}
+        <div className="mt-10">
+          <Image
+            src="/images/compass.jpg"
+            alt="Surveying Services"
+            width={1200}
+            height={800}
+            className="rounded-lg shadow-lg"
+          />
         </div>
       </div>
     </section>
