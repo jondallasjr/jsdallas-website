@@ -1,4 +1,6 @@
 const Footer = () => {
+    const currentYear = new Date().getFullYear(); // This is fine as long as it's consistent
+  
     return (
       <footer className="bg-gray-50">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -48,8 +50,8 @@ const Footer = () => {
               <h3 className="text-lg font-medium text-gray-900">Contact</h3>
               <ul className="mt-4 space-y-2">
                 <li className="text-gray-600">(410) 817-4600</li>
-                <li className="text-gray-600">12126 Long Green Pike</li>
-                <li className="text-gray-600">Glen Arm, MD 21057</li>
+                <li className="text-gray-600">Physical Address: 12126 Long Green Pike, Glen Arm, MD 21057</li>
+                <li className="text-gray-600">Mailing Address: P.O. Box 26, Baldwin, MD 21013</li>
               </ul>
             </div>
           </div>
@@ -57,7 +59,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="mt-8 pt-8 border-t border-gray-200">
             <p className="text-gray-500 text-center">
-              © {new Date().getFullYear()} J.S. Dallas, Inc. All rights reserved.
+              © {currentYear} J.S. Dallas, Inc. All rights reserved.
             </p>
           </div>
         </div>

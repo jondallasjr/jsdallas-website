@@ -21,7 +21,9 @@ const AboutSection = () => {
                             For two generations, the Dallas family name has been synonymous with quality service, dedicated to delivering precise measurements and detailed property mapping.
                         </p>
                         <p>
-                            Whether you're developing land, resolving property disputes, or planning construction projects, we are here to provide the expertise and precision you need. Contact us today to learn more about how we can support your next project.
+                            <p>
+                                {`Whether you're developing land, resolving property disputes, or planning construction projects, we are here to provide the expertise and precision you need. Contact us today to learn more about how we can support your next project.`}
+                            </p>
                         </p>
                     </div>
                 </div>

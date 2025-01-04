@@ -69,9 +69,18 @@ const ContactSection = () => {
             <div className="flex items-center space-x-4">
               <MapPin className="h-6 w-6 text-blue-600 flex-shrink-0" />
               <div>
-                <h3 className="text-lg font-medium text-gray-900">Address</h3>
+                <h3 className="text-lg font-medium text-gray-900">Physical Address</h3>
                 <p className="text-gray-600">12126 Long Green Pike</p>
                 <p className="text-gray-600">Glen Arm, Maryland 21057</p>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-4">
+              <MapPin className="h-6 w-6 text-blue-600 flex-shrink-0" />
+              <div>
+                <h3 className="text-lg font-medium text-gray-900">Mailing Address</h3>
+                <p className="text-gray-600">P.O. Box 26</p>
+                <p className="text-gray-600">Baldwin, Maryland 21013</p>
               </div>
             </div>
 
