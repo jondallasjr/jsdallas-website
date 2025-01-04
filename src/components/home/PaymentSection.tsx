@@ -14,56 +14,56 @@ const PaymentSection = () => {
           </p>
         </div>
 
-        <div className="mt-10 max-w-lg mx-auto">
-          <Card>
-            <CardContent className="pt-6">
-              <div className="space-y-4">
-                <div className="flex items-center space-x-2 text-gray-700">
-                  <DollarSign className="h-5 w-5 text-blue-600" />
-                  <span>Secure online payment through our payment portal</span>
-                </div>
-                
-                <div className="flex items-center space-x-2 text-gray-700">
-                  <Mail className="h-5 w-5 text-blue-600" />
-                  <span>Zelle payments accepted at: JSDInc@aol.com</span>
-                </div>
-                
-                <div className="flex items-center space-x-2 text-gray-700">
-                  <MapPin className="h-5 w-5 text-blue-600" />
-                  <span>Mail checks to: P.O. Box 26, Baldwin, MD 21013</span>
-                </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10">
+          <div className="lg:col-span-2">
+            <Card>
+              <CardContent className="pt-6">
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-2 text-gray-700">
+                    <DollarSign className="h-5 w-5 text-blue-600" />
+                    <span>Secure online payment through our payment portal</span>
+                  </div>
+                  
+                  <div className="flex items-center space-x-2 text-gray-700">
+                    <Mail className="h-5 w-5 text-blue-600" />
+                    <span>Zelle payments accepted at: JSDInc@aol.com</span>
+                  </div>
+                  
+                  <div className="flex items-center space-x-2 text-gray-700">
+                    <MapPin className="h-5 w-5 text-blue-600" />
+                    <span>Mail checks to: P.O. Box 26, Baldwin, MD 21013</span>
+                  </div>
 
-                <div className="bg-blue-50 p-4 rounded-md text-sm text-blue-700">
-                  Please reference our invoice number (or &quot;deposit&quot;) and the property address 
-                  with your payment.
-                </div>
+                  <div className="bg-blue-50 p-4 rounded-md text-sm text-blue-700">
+                    Please reference our invoice number (or &quot;deposit&quot;) and the property address 
+                    with your payment.
+                  </div>
 
-                <div className="pt-4">
-                  <Button className="w-full" size="lg">
-                    <a 
-                      href="https://square.link/u/ZqySgynk" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center w-full"
-                    >
-                      Pay Now
-                    </a>
-                  </Button>
+                  <div className="pt-4">
+                    <Button className="w-full" size="lg">
+                      <a 
+                        href="https://square.link/u/ZqySgynk" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center w-full"
+                      >
+                        Pay Now
+                      </a>
+                    </Button>
+                  </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Add the plans.jpg image */}
-        <div className="mt-10">
-          <Image
-            src="/images/plans.jpg"
-            alt="Payment Plans"
-            width={1200}
-            height={800}
-            className="rounded-lg shadow-lg"
-          />
+              </CardContent>
+            </Card>
+          </div>
+          <div className="lg:col-span-1">
+            <Image
+              src="/images/plans.jpg"
+              alt="Payment Plans"
+              width={400}
+              height={600}
+              className="rounded-lg shadow-lg"
+            />
+          </div>
         </div>
       </div>
     </section>
