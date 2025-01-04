@@ -8,8 +8,7 @@ import {
   FileText, 
   Mountain, 
   Home,
-  Scale,
-  LucideIcon
+  Scale
 } from "lucide-react";
 
 interface ServiceIconMap {

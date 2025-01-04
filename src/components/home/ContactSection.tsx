@@ -25,6 +25,7 @@ const ContactSection = () => {
         body: JSON.stringify(formState),
       });
       const result = await response.json();
+      console.log(result);
       if (response.ok) {
         alert('Message sent successfully!');
         // Clear the form after successful submission
