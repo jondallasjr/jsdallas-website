@@ -14,9 +14,9 @@ const PaymentSection = () => {
         </div>
 
         <div className="flex justify-center mt-10">
-          <div className="w-full max-w-2xl">
+          <div className="w-full lg:w-2/3">
             <Card>
-              <CardContent className="pt-6">
+              <CardContent className="p-6 pt-6">
                 <div className="space-y-4">
                   {/* Secure Online Payment */}
                   <div className="flex items-center space-x-2 text-gray-700">
@@ -63,13 +63,13 @@ const PaymentSection = () => {
                   </div>
 
                   {/* Pay Now Button */}
-                  <div className="pt-4">
-                    <Button className="w-full" size="lg">
+                  <div className="pt-4 flex justify-center">
+                    <Button className="w-fit" size="lg">
                       <a
                         href="https://checkout.square.site/merchant/7GXA474BJ29XX/checkout/FOKUT5A42GOXWTI4JYONIVU2"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center w-full"
+                        className="flex items-center justify-center"
                       >
                         Pay Now
                       </a>

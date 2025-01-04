@@ -21,13 +21,18 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
+                  <a href="#about" className="text-gray-600 hover:text-gray-900">
+                    About
+                  </a>
+                </li>
+                <li>
                   <a href="#contact" className="text-gray-600 hover:text-gray-900">
                     Contact
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="https://square.link/u/ZqySgynk" 
+                  <a
+                    href="https://square.link/u/ZqySgynk"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-600 hover:text-gray-900"
