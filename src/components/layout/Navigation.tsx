@@ -10,7 +10,7 @@ import {
     return (
       <NavigationMenu>
         <NavigationMenuList>
-          <NavigationMenuItem>
+          <NavigationMenuItem className="hidden md:block">
             <NavigationMenuLink 
               href="#services" 
               className="text-gray-700 hover:text-gray-900 px-4 py-2"
@@ -18,7 +18,7 @@ import {
               Services
             </NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          <NavigationMenuItem className="hidden md:block">
             <NavigationMenuLink 
               href="#about" 
               className="text-gray-700 hover:text-gray-900 px-4 py-2"
@@ -26,7 +26,7 @@ import {
               About
             </NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          <NavigationMenuItem className="hidden md:block">
             <NavigationMenuLink 
               href="#contact" 
               className="text-gray-700 hover:text-gray-900 px-4 py-2"

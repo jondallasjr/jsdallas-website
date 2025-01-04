@@ -16,14 +16,14 @@ interface ServiceIconMap {
 }
 
 const iconMap: ServiceIconMap = {
-  "AS-BUILT SURVEYS": <Ruler className="w-8 h-8" />,
-  "GPS SURVEYS": <Compass className="w-8 h-8" />,
-  "BOUNDARY SURVEYS": <Map className="w-8 h-8" />,
-  "LOCATION SURVEYS": <MapPin className="w-8 h-8" />,
-  "FEMA ELEVATION CERTIFICATIONS": <FileText className="w-8 h-8" />,
-  "TOPOGRAPHIC SURVEYS": <Mountain className="w-8 h-8" />,
-  "LOT SURVEYS": <Home className="w-8 h-8" />,
-  "EXPERT WITNESS SERVICES": <Scale className="w-8 h-8" />
+  "As-Built Surveys": <Ruler className="w-6 h-6" />,
+  "GPS Surveys": <Compass className="w-6 h-6" />,
+  "Boundary Surveys": <Map className="w-6 h-6" />,
+  "Location Surveys": <MapPin className="w-6 h-6" />,
+  "FEMA Elevation Certifications": <FileText className="w-6 h-6" />,
+  "Topographic Surveys": <Mountain className="w-6 h-6" />,
+  "Lot Surveys": <Home className="w-6 h-6" />,
+  "Expert Witness Services": <Scale className="w-6 h-6" />
 };
 
 interface ServiceCardProps {
@@ -32,12 +32,12 @@ interface ServiceCardProps {
 }
 
 export const ServiceCard: React.FC<ServiceCardProps> = ({ title, description }) => {
-  const icon = iconMap[title] || <MapPin className="w-8 h-8" />;
+  const icon = iconMap[title] || <MapPin className="w-6 h-6" />;
   
   return (
     <Card className="hover:shadow-lg transition-shadow duration-200 hover:border-blue-200">
       <CardHeader>
-        <div className="text-blue-600 mb-4">{icon}</div>
+        <div className="text-blue-600 mb-2">{icon}</div>
         <CardTitle className="text-lg font-medium text-gray-900">
           {title}
         </CardTitle>
