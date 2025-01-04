@@ -33,7 +33,7 @@ const PaymentSection = () => {
                 </div>
 
                 <div className="bg-blue-50 p-4 rounded-md text-sm text-blue-700">
-                  Please reference our invoice number (or 'deposit') and the property address 
+                  Please reference our invoice number (or &quot;deposit&quot;) and the property address 
                   with your payment.
                 </div>
 
