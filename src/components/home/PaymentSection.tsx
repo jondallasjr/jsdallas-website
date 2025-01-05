@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Lock, DollarSign, Mail } from "lucide-react";
@@ -7,7 +9,7 @@ const PaymentSection = () => {
     <section className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <h2 className="text-3xl font-bold text-gray-900">Online Bill Payment</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Payment</h2>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             Multiple convenient payment options available
           </p>
